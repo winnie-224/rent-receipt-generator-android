@@ -68,4 +68,4 @@ For queries or feedback:
 
 ## 📄 License
 
-This project is shared for learning and utility purposes. Licensing can be updated as needed.
+This project is shared for learning and utility purposes.
