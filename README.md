@@ -48,6 +48,10 @@ All data entered by the user remains **on the device** and is used only to gener
 ✅ Feature‑complete MVP
 ✅ Validation & UX enhancements done
 ---
+## 📥 Download
+
+Download the latest APK from GitHub Releases:
+https://github.com/winnie-224/rent-receipt-generator-android/releases/
 
 ## 📌 Disclaimer
 
