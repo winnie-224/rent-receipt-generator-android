@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="50dp">
+    <!--Title-->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Rent Receipt Generator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+    <!--Owner-->
+    <EditText
+        android:id="@+id/etOwner"
+        android:hint="Owner Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        />
+    <!--Tenant-->
+    <EditText
+        android:id="@+id/etTenant"
+        android:hint="Tenant Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        />
+    <!--Address-->
+    <EditText
+        android:id="@+id/etAddress"
+        android:hint="Address"
+        android:minLines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"/>
+    <!--Monthly Rent-->
+    <EditText
+        android:id="@+id/etRent"
+        android:hint="Monthly Rent INR"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        />
+    <!--Advance-->
+    <EditText
+        android:id="@+id/etAdvance"
+        android:hint="Advance INR"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        />
+    <!--Date Picker-->
+    <TextView
+        android:id="@+id/tvReceiptDate"
+        android:text="Receipt Date: Not Selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"/>
+    <Button
+        android:id="@+id/btnReceiptDate"
+        android:text="Select Receipt Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvFromDate"
+        android:text="From Date: Not Selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"/>
+    <Button
+        android:id="@+id/btnFromDate"
+        android:text="Select From Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvToDate"
+        android:text="To Date: Not Selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"/>
+    <Button
+        android:id="@+id/btnToDate"
+        android:text="Select To Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--Stamp-->
+    <ImageView
+        android:id="@+id/ivStampPreview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Stamp Preview"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <!-- Decrease stamp size -->
+        <Button
+            android:id="@+id/btnStampMinus"
+            android:text="−"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+        <!-- Upload stamp -->
+        <Button
+            android:id="@+id/btnPickStamp"
+            android:text="Upload Revenue Stamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+        <!-- Increase stamp size -->
+        <Button
+            android:id="@+id/btnStampPlus"
+            android:text="+"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+    </LinearLayout>
+    <!--Generate and Reset-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+        <Button
+            android:id="@+id/btnGenerate"
+            android:text="Generate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/btnReset"
+            android:text="Reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
