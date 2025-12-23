@@ -9,7 +9,6 @@
     android:padding="50dp">
     <!--Title-->
     <TextView
-        android:id="@+id/tvTitle"
         android:text="Rent Receipt Generator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
