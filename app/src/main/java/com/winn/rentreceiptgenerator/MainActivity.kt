@@ -117,6 +117,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvToDate).text = "To Date: Not Selected"
         //clear stamp image
         stampBitmap = null
+        stampPreview.setImageResource(R.drawable.ic_stamp_placeholder)
         toast("Form Reset")
     }
     //Stamp Image Picker
@@ -222,6 +223,7 @@ class MainActivity : AppCompatActivity() {
         val advance = advanceStr.toIntOrNull() ?: 0
         val total = rent - advance
         val balance = rent - total
+
 
 
         //Create PDF
@@ -430,6 +432,17 @@ class MainActivity : AppCompatActivity() {
             }
         return convert(number).trim()
 
+    }
+
+    override fun onBackPressed(){
+        androidx.appcompat.app.AlertDialog.Builder(this)
+            .setTitle("Exit")
+            .setMessage("Do you want to exit?")
+            .setPositiveButton("Yes") {_,_ ->
+                finishAffinity()
+            }
+            .setNegativeButton("No", null)
+            .show()
     }
 }
 

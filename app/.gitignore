@@ -1,1 +1,28 @@
+# Build directories
 /build
+/app/build
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.local.properties
+
+# Gradle
+.gradle/
+
+# APK / AAB files
+*.apk
+*.aab
+
+# Release outputs
+app/release/
+
+# Baseline profiles
+baselineProfiles/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

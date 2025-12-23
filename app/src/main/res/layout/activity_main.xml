@@ -7,6 +7,15 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="50dp">
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="App Icon"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent" />
     <!--Title-->
     <TextView
         android:text="Rent Receipt Generator"
@@ -103,6 +112,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
+        android:src = "@drawable/ic_stamp_placeholder"
         android:background="@android:color/darker_gray"
         android:scaleType="centerInside"
         android:layout_marginBottom="8dp"
